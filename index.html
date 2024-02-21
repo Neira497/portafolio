@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/icons/androide.png" type="image/x-icon">
+    <title>Eli Neira</title>
+  </head>
+  <body>
+    <!-- Nav side -->
+    <nav class="nav__side">
+      <div class="nav__side_space">
+        <div class="side__header">
+          <img
+            src="./images/icons/programador.png"
+            class="logo"
+            alt="LogoNav"
+          />
+          <h1>Portafolio web</h1>
+
+          <i class="fa-solid fa-x" id="menu_x"></i>
+        </div>
+
+        <div class="side__list">
+          <ul>
+            <li id="about"><a href="#">Acerca de mi</a></li>
+            <li id="proyectos"><a href="#">Proyectos</a></li>
+            <li id="modelos"><a href="#">Modelos</a></li>
+            <li id="tecnologias"><a href="#">Tecnologias</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__contact">
+        <ul>
+          <li><a href="">Contáctame</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav side -->
+
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav__space">
+        <img src="./images/icons/androide.png" class="logo" alt="LogoNav" />
+        <h1>Eli Neira</h1>
+      </div>
+
+      <i class="fa-solid fa-bars menu" id="menu"></i>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Nav pc -->
+    <nav class="nav__pc">
+      <div class="nav__pcontent">
+        <div class="nav__space">
+          <img src="./images/icons/androide.png" class="logo" alt="LogoNav" />
+          <h1>Eli Neira</h1>
+        </div>
+
+        <div class="stroke">
+          <ul>
+            <li id="aboutPc"><a href="#">Acerca de mi</a></li>
+            <li id="proyectosPc"><a href="#">Proyectos</a></li>
+            <li id="modelosPc"><a href="#">Modelos</a></li>
+            <li id="tecnologiasPc"><a href="#">Tecnologias</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav pc -->
+
+    <main>
+      <!-- Landing -->
+      <section class="container landing">
+        <div class="text__presentation">
+          <h1>Desarrollador de <span>software multiplataforma</span></h1>
+          <p>Creando soluciones innovadoras con tecnología.</p>
+          <p>correo: <span class="correo">elineira497@gmail.com</span></p>
+          <a href="#">Contáctame</a>
+        </div>
+        <div class="image__landing">
+          <img src="./images/robot_landing.png" alt="Robot" />
+        </div>
+      </section>
+      <!-- Landing -->
+
+      <!-- Acerca de mi -->
+      <section class="container about">
+        <div class="about__text">
+          <div class="about__much">
+            <h1>Jose Eli Neira Rivera</h1>
+            <h3>Técnico programador</h3>
+          </div>
+          <p>
+            Estoy muy interesado en el aprendizaje automático usando
+            <b>redes neuronales</b> y el
+            <b>desarrollo de software multiplataforma</b>. Estoy dispuesto a
+            aprender todo lo necesario para desarrollarme profesionalmente y
+            tengo un <strong>alto compromiso con los proyectos</strong>.
+          </p>
+        </div>
+
+        <div class="about__img">
+          <div class="image-overlay"></div>
+          <img src="./images/yo.jpg" alt="Eli Neira" />
+        </div>
+      </section>
+      <!-- Acerca de mi -->
+
+      <!-- Proyectos extracurriculares -->
+      <h1 id="titulo__proyect" class="container projects__title">Proyectos extracurriculares</h1>
+      <section class="container projects">
+        <div class="project">
+          <div class="frc__text">
+            <h2>Programador lider</h2>
+            <p>
+              Fui participe del equipo Jaegers 60 First Robotics Competition
+              (FRC) 2022 como lider programador, donde programaba con lenguajes
+              como java y labview y solucionaba errores que teniamos en el
+              camino a finalizar el projecto. <em>Enero 2022 a Junio 2022</em>.
+            </p>
+          </div>
+
+          <div class="frc__img">
+            <img src="./images/foto_programando.jpg" alt="lider" />
+          </div>
+        </div>
+
+        <div class="project mentor">
+          <div class="frc__text">
+            <h2>Mentor junior</h2>
+            <p>
+              Resolvia dudas de compañeros,
+              <strong
+                >enseñaba fundamentos de java y programación orientada a
+                objetos</strong
+              >
+              a miembros nuevos del equipo, despues enseñé a programar los
+              diferentes componentes electrónicos como giroscopios y cámaras.
+              <em>Junio 2022 a Noviembre 2023</em>.
+            </p>
+          </div>
+
+          <div class="frc__img">
+            <img src="./images/mentor.jpg" alt="lider" />
+          </div>
+        </div>
+      </section>
+      <!-- Proyectos extracurriculares -->
+
+      <!-- FIRST -->
+      <section class="container first">
+        <div class="first__title">
+          <img src="./images/first.png" alt="first" />
+          <h1>First Robotics Competition</h1>
+          <img src="./images/first.png" alt="first" />
+        </div>
+
+        <div class="first__cards">
+          <img src="./images/equipo.jpg" alt="Trabajo en equipo" />
+
+          <div class="first__text">
+            <h3>Trabajo en equipo</h3>
+            <p>
+              Trabajé en un equipo de alto rendimiento donde han estado amigos
+              con habilidades en diferentes areas como electrónica,
+              administración, seguridad, y el area en el que yo participé como
+              lider y mentor junior fue el area de programación.
+            </p>
+          </div>
+        </div>
+
+        <div class="first__cards">
+          <img src="./images/migracion.jpg" alt="Migración de codigo" />
+
+          <div class="first__text">
+            <h3>Migración de Labview a Java</h3>
+            <p>
+              En el 2022, programé nuestro primer robot "Robodrigo" con Labview, pero en el año 2023
+              migramos a java asi que pasé los códigos de labview a java
+              aprendiendo y aplicando en practica muchos conceptos de
+              programación orientada a objetos que aprendí leyendo documentación
+              de java.
+            </p>
+          </div>
+        </div>
+
+        <div class="first__cards">
+          <img
+            src="./images/participacion activa.jpg"
+            alt="Trabajo en equipo"
+          />
+
+          <div class="first__text">
+            <h3>Participación activa</h3>
+            <p>
+              La competencia donde mi participación fue mas activa fue en la
+              temporada del 2022 donde junto a mis compañeros fuimos a la
+              regional en el tecnológico de monterrey del campus
+              Torreón, ahora soy mentor junior donde ayudo a mis compañeros con sus dudas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- FIRST -->
+
+      <!-- Models -->
+      <section class="container models">
+        <h1>Modelos de machine learning e inteligencia artificial</h1>
+
+        <div class="model">
+          <div class="model__header">
+            <h3>Modelo celcius a fahrenheit</h3>
+            <img id="c2f" src="./images/models/ml.jpg" alt="primer modelo" />
+          </div>
+
+          <div class="model__content">
+            <p>
+              El primer modelo a mostrar es acerca de pasar de grados celcius a
+              grados fahrenheit, el machine learning es muy util cuando se
+              quiere hacer predicciones sin saber la formula (si es que existe
+              para el caso que la quieran aplicar).
+            </p>
+
+            <form class="model__c2f">
+              <div id="resultado"></div>
+              <label for="celsius"
+                >Grados celsius: <span id="lbl-celsius"></span
+              ></label>
+              <input
+                type="range"
+                min="-200"
+                max="200"
+                id="celsius"
+                oninput="cambiarCelsius()"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="model model__numbers">
+          <div class="model__header">
+            <h3>Modelo de prediccion de numeros</h3>
+          </div>
+
+          <div class="model__content">
+            <p>
+              Algunas redes neuronales son buenas clasificando por pixeles pero
+              las redes convolucionales son mejores para analizar imagenes, pero
+              este modelo solo analiza los numeros, si intenta hacer un dibujo
+              que no sea un numero, el modelo intentará predecir de cualquier
+              manera ya que fue entrenada para reconocer numeros.
+            </p>
+
+            <p class="numeroPredecir">¡Dibuje un numero!</p>
+          </div>
+
+          <div class="canvas__double">
+            <canvas id="bigcanvas" width="200" height="200"></canvas>
+            <canvas id="smallcanvas" width="28" height="28"></canvas>
+            <div id="resultadoNumeros"></div>
+          </div>
+
+          <div class="canvas__buttons">
+            <button id="limpiar" onclick="limpiar()">Limpiar</button>
+            <button id="predecir" onclick="predecir()">Predecir</button>
+          </div>
+        </div>
+
+        <div class="model model__flores">
+          <div class="model__header">
+            <h3 style="margin-bottom: 10px">Tipos de flores</h3>
+            <img
+              id="flower"
+              src="./images/models/flores.jpg"
+              alt="primer modelo"
+            />
+          </div>
+
+          <div class="model__content">
+            <p>
+              Este modelo tiene un 70% de acertividad en predicciones, por lo
+              que falta hacer más entrenamiento fue entrenado para reconocer por
+              medio de caracteristicas, el tipo de flor iris, las mas comunes
+              son de 3 tipos:
+            </p>
+            <ul style="margin-left: 17px">
+              <li>Iris versicolor</li>
+              <li>Iris setosa</li>
+              <li>Iris virginica</li>
+            </ul>
+
+            <p>¿Sabrías reconocer una de ellas?</p>
+
+            <div id="resultadoFlores"></div>
+
+            <form class="model__c2f">
+              <div id="resultadoFlores"></div>
+              <div class="inputs">
+                <label for="longitudSepalo"
+                  >Longitud del sepalo: <span id="lenSe"></span
+                ></label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  id="longitudSepalo"
+                  oninput="updateLenSepalo(this.value, 4.3, 7.9)"
+                />
+              </div>
+              <div class="inputs">
+                <label for="anchoSepalo"
+                  >Ancho del sepalo: <span id="widSe"></span
+                ></label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  id="anchoSepalo"
+                  oninput="updateWidthSepalo(this.value, 2, 4.4)"
+                />
+              </div>
+              <div class="inputs">
+                <label for="longitudPetalo"
+                  >Longitud del petalo: <span id="lenPe"></span
+                ></label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  id="longitudPetalo"
+                  oninput="updateLenPetalo(this.value, 1, 6.9)"
+                />
+              </div>
+              <div class="inputs">
+                <label for="anchoPetalo"
+                  >Ancho del petalo: <span id="widPe"></span
+                ></label>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  id="anchoPetalo"
+                  oninput="updateWidthPetalo(this.value, 0.1, 2.5)"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Models -->
+
+      <!-- Tacnologias -->
+      <section class="container tech">
+        <div class="tech__header">
+          <h1>Tecnologías</h1>
+          <p>
+            Los siguientes lenguajes de programación, librerias o frameworks son
+            con los que he trabajado.
+          </p>
+        </div>
+
+        <div class="wrap__cards">
+          <div class="tech__card">
+            <img src="./images/tecnologias/python.png" alt="python" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/tensorflow.jpg" alt="tensorflow" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/keras.png" alt="keras" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/opencv.png" alt="opencv" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/arduino.png" alt="arduino" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/flutter.png" alt="flutter" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/firebase.png" alt="firebase" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/java.png" alt="java" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/labview.jpg" alt="labview" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/wpilib.png" alt="wpilib" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/mariadb.jpg" alt="mariadb" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/html.png" alt="html" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/css.png" alt="css" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/dart.png" alt="dart" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/javascript.png" alt="javascript" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/php.png" alt="php" />
+          </div>
+
+          <div class="tech__card">
+            <img
+              src="./images/tecnologias/android studio.png"
+              alt="android studio"
+            />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/git.png" alt="git" />
+          </div>
+
+          <div class="tech__card">
+            <img src="./images/tecnologias/github.png" alt="github" />
+          </div>
+        </div>
+      </section>
+      <!-- Tacnologias -->
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/d9db09c8f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/primerModelo.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/fabric.min.js"></script>
+    <script src="./js/segundoModelo.js"></script>
+    <script src="./js/drawing.js"></script>
+    <script src="./js/navigate.js"></script>
+    <script src="./js/tercerModelo.js"></script>
+  </body>
+</html>
