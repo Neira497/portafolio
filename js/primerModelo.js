@@ -2,7 +2,7 @@ let modelo = null;
 
 (async () => {
   console.log("Cargando modelo de grados...");
-  modelo = await tf.loadLayersModel("../cel2fah/model.json");
+  modelo = await tf.loadLayersModel("js/cel2fah/model.json");
   console.log("Modelo cargado de grados...");
 })();
 

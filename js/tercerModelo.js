@@ -3,7 +3,7 @@ let modeloFlores = null;
 
 (async () => {
   console.log("Cargando modelo de flores...");
-  modeloFlores = await tf.loadLayersModel("../flores/model.json");
+  modeloFlores = await tf.loadLayersModel("js/flores/model.json");
   console.log("Modelo cargado de flores...");
 })();
 

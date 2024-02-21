@@ -121,6 +121,6 @@ function resample_single(canvas, width, height, resize_canvas) {
 //Cargar modelo
 (async () => {
   console.log("Cargando modelo de numeros...");
-  modeloNumeros = await tf.loadLayersModel("../numbers/model.json");
+  modeloNumeros = await tf.loadLayersModel("js/numbers/model.json");
   console.log("Modelo cargado de numeros...");
 })();
